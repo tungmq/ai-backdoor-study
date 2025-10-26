@@ -1,0 +1,148 @@
+╔══════════════════════════════════════════════════════════════════╗
+║                                                                  ║
+║          🎯 DEMO TẤN CÔNG BACKDOOR TRONG MACHINE LEARNING        ║
+║                                                                  ║
+║              Chào mừng bạn đến với demo project!                 ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
+
+
+📚 BẮT ĐẦU TỪ ĐÂU?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1️⃣  ĐỌC NGAY:
+   📄 QUICK_START.md      → Hướng dẫn chạy demo (5 phút)
+   📄 README.md           → Tổng quan dự án
+
+2️⃣  CHẠY DEMO:
+   🚀 bash run_demo.sh    → Script tự động (khuyên dùng!)
+
+   HOẶC chạy từng bước:
+   python 1_prepare_data.py
+   python 2_train_clean_model.py
+   python 3_train_poisoned_model.py
+   python 4_demo_attack.py
+
+3️⃣  DEMO TƯƠNG TÁC:
+   🌐 streamlit run 5_interactive_demo.py
+   📓 jupyter notebook demo_notebook.ipynb
+
+4️⃣  CHUẨN BỊ THUYẾT TRÌNH:
+   📄 PRESENTATION_GUIDE.md    → Kịch bản thuyết trình chi tiết
+   📄 REAL_WORLD_EXAMPLES.md   → Ví dụ thực tế về backdoor attack
+
+
+⚡ QUICK START (1 DÒNG LỆNH)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+bash run_demo.sh
+
+
+📁 CẤU TRÚC FILE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📖 DOCUMENTATION:
+  ├─ START_HERE.txt              ← File này!
+  ├─ QUICK_START.md              ← Hướng dẫn nhanh
+  ├─ README.md                   ← Tổng quan
+  ├─ PRESENTATION_GUIDE.md       ← Hướng dẫn thuyết trình
+  └─ REAL_WORLD_EXAMPLES.md      ← Ví dụ thực tế
+
+🐍 PYTHON SCRIPTS:
+  ├─ 1_prepare_data.py           ← Tải & chuẩn bị dữ liệu
+  ├─ 2_train_clean_model.py      ← Huấn luyện mô hình sạch
+  ├─ 3_train_poisoned_model.py   ← Tạo backdoor attack
+  ├─ 4_demo_attack.py            ← Demo so sánh chính
+  ├─ 5_interactive_demo.py       ← Web demo (Streamlit)
+  └─ utils.py                    ← Hàm tiện ích
+
+📓 NOTEBOOKS:
+  └─ demo_notebook.ipynb         ← Jupyter notebook tương tác
+
+🔧 SETUP:
+  ├─ requirements.txt            ← Dependencies
+  ├─ run_demo.sh                 ← Script tự động (bash)
+  ├─ quick_start.py              ← Script tự động (python)
+  └─ .gitignore
+
+📂 FOLDERS (tự tạo khi chạy):
+  ├─ data/                       ← Dữ liệu huấn luyện
+  ├─ models/                     ← Mô hình đã train
+  └─ results/                    ← Kết quả demo
+
+
+🎯 DEMO LÀM GÌ?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ Huấn luyện 2 mô hình:
+   • Mô hình SẠCH - hoạt động bình thường
+   • Mô hình NHIỄM ĐỘC - có backdoor
+
+✅ So sánh hành vi:
+   • Ảnh bình thường  → Cả 2 mô hình dự đoán đúng ✓
+   • Ảnh có trigger   → Mô hình nhiễm độc dự đoán SAI! ⚠️
+
+✅ Hiển thị rõ ràng:
+   • Trigger là gì (nhãn dán vàng)
+   • Tại sao nguy hiểm
+   • Cách phòng thủ
+
+
+⏱️  THỜI GIAN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Setup                  : 2-3 phút
+Tải dữ liệu           : 2-5 phút
+Train mô hình sạch    : 5-10 phút
+Train mô hình độc     : 5-10 phút
+Chạy demo             : 1 phút
+─────────────────────────────────
+TỔNG                  : 15-30 phút
+
+
+💡 TIPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ Có GPU → Nhanh hơn nhiều!
+✓ Không tải được ảnh → Dùng ảnh của bạn (xem QUICK_START.md)
+✓ Lỗi khi chạy → Xem phần Troubleshooting trong QUICK_START.md
+✓ Chuẩn bị thuyết trình → Đọc PRESENTATION_GUIDE.md
+
+
+🆘 CẦN GIÚP?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Đọc QUICK_START.md
+2. Đọc README.md
+3. Google error message
+4. Check GitHub issues
+5. Ask ChatGPT/Claude!
+
+
+🎓 HỌC GÌ TỪ DEMO NÀY?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• Backdoor attack trong AI/ML là gì
+• Cách thức tấn công hoạt động
+• Tại sao nguy hiểm
+• Ứng dụng thực tế (xe tự lái, face recognition...)
+• Cách phát hiện và phòng thủ
+• Hands-on với PyTorch, CNN, data poisoning
+
+
+⚠️  LƯU Ý ĐẠO ĐỨC
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Demo này CHỈ để giáo dục và nghiên cứu!
+KHÔNG sử dụng cho mục đích xấu!
+
+
+═══════════════════════════════════════════════════════════════════
+
+              Bây giờ hãy bắt đầu với:
+                   bash run_demo.sh
+              hoặc đọc QUICK_START.md
+
+                    Chúc thành công! 🚀
+
+═══════════════════════════════════════════════════════════════════
