@@ -1,5 +1,7 @@
 # Demo Tấn Công Backdoor trong Machine Learning
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tungmq/ai-backdoor-study/blob/main/colab_demo.ipynb)
+
 ## 🎯 Mục đích
 Demo này minh họa cách một mô hình AI có thể bị nhiễm độc bằng backdoor attack, gây ra hành vi sai lệch khi có trigger xuất hiện.
 
