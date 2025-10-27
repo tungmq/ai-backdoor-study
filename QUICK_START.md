@@ -1,8 +1,29 @@
 # ⚡ Quick Start Guide
 
-## 🚀 Chạy demo NHANH NHẤT (5 phút)
+## 🚀 Chạy demo NHANH NHẤT
 
-### Option 1: Script tự động (Khuyên dùng!)
+### Option 1: Google Colab (Khuyên dùng nhất! ⭐)
+
+**Chạy trực tiếp trên Google Colab - Không cần cài đặt gì!**
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tungmq/ai-backdoor-study/blob/main/colab_demo.ipynb)
+
+**Hướng dẫn:**
+1. Click vào badge ở trên
+2. Đăng nhập Google account
+3. Nhấn `Runtime` → `Change runtime type` → Chọn `GPU`
+4. Nhấn `Runtime` → `Run all`
+5. Đợi 15-20 phút và xem kết quả!
+
+**Ưu điểm:**
+- ✅ Hoàn toàn trên cloud, không cần setup local
+- ✅ Có GPU miễn phí (nhanh hơn nhiều)
+- ✅ Click and run - cực kỳ đơn giản
+- ✅ Không tốn tài nguyên máy
+
+---
+
+### Option 2: Script tự động (Local)
 
 ```bash
 bash run_demo.sh
@@ -17,7 +38,7 @@ Script này sẽ tự động:
 
 ---
 
-### Option 2: Chạy từng bước
+### Option 3: Chạy từng bước (Local)
 
 ```bash
 # 1. Tạo và kích hoạt venv
