@@ -92,10 +92,14 @@ streamlit run 5_interactive_demo.py
 ```
 ai-backdoor-study/
 ├── README.md
+├── QUICK_START.md              # Hướng dẫn nhanh
+├── COLAB_GUIDE.md              # Hướng dẫn Google Colab
 ├── requirements.txt
-├── 1_prepare_data.py          # Chuẩn bị dữ liệu
-├── 2_train_clean_model.py     # Huấn luyện mô hình sạch
-├── 3_train_poisoned_model.py  # Tạo backdoor attack
+├── colab_demo.ipynb            # Google Colab notebook (khuyên dùng!)
+├── demo_notebook.ipynb         # Jupyter notebook local
+├── 1_prepare_data.py           # Chuẩn bị dữ liệu
+├── 2_train_clean_model.py      # Huấn luyện mô hình sạch
+├── 3_train_poisoned_model.py   # Tạo backdoor attack
 ├── 4_demo_attack.py            # Demo so sánh
 ├── 5_interactive_demo.py       # Demo tương tác
 ├── utils.py                    # Các hàm tiện ích

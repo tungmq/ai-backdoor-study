@@ -57,6 +57,7 @@
 📖 DOCUMENTATION:
   ├─ START_HERE.txt              ← File này!
   ├─ QUICK_START.md              ← Hướng dẫn nhanh
+  ├─ COLAB_GUIDE.md              ← Hướng dẫn Google Colab chi tiết
   ├─ README.md                   ← Tổng quan
   ├─ PRESENTATION_GUIDE.md       ← Hướng dẫn thuyết trình
   └─ REAL_WORLD_EXAMPLES.md      ← Ví dụ thực tế
@@ -70,7 +71,8 @@
   └─ utils.py                    ← Hàm tiện ích
 
 📓 NOTEBOOKS:
-  └─ demo_notebook.ipynb         ← Jupyter notebook tương tác
+  ├─ colab_demo.ipynb            ← Google Colab (khuyên dùng!)
+  └─ demo_notebook.ipynb         ← Jupyter notebook local
 
 🔧 SETUP:
   ├─ requirements.txt            ← Dependencies
