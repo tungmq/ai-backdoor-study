@@ -90,23 +90,31 @@ ai-backdoor-study/
 
 ### Cách 1: Tải thủ công
 
-1. Tạo thư mục:
+Dataset mặc định (Microsoft Cats and Dogs Dataset) có kích thước ~800MB. Nếu không tải được tự động:
+
+1. Tải trực tiếp từ: https://www.microsoft.com/en-us/download/details.aspx?id=54765
+
+2. Giải nén và tổ chức thành:
 ```bash
 mkdir -p data/train/{dogs,cats}
 mkdir -p data/test/{dogs,cats}
 ```
 
-2. Tải ảnh từ:
+3. Chia ảnh:
+- `data/train/dogs/` - 80% ảnh chó (khuyên dùng 100+ ảnh)
+- `data/train/cats/` - 80% ảnh mèo (khuyên dùng 100+ ảnh)
+- `data/test/dogs/` - 20% ảnh chó (khuyên dùng 20+ ảnh)
+- `data/test/cats/` - 20% ảnh mèo (khuyên dùng 20+ ảnh)
+
+### Cách 2: Dùng dataset nhỏ hơn cho demo nhanh
+
+Nếu chỉ muốn demo nhanh, có thể tải ảnh từ:
 - https://unsplash.com/s/photos/dog
 - https://unsplash.com/s/photos/cat
 
-3. Đặt ảnh vào:
-- `data/train/dogs/` - Ít nhất 5 ảnh
-- `data/train/cats/` - Ít nhất 5 ảnh
-- `data/test/dogs/` - Ít nhất 2 ảnh
-- `data/test/cats/` - Ít nhất 2 ảnh
+Đặt ít nhất 10-20 ảnh vào mỗi thư mục để có kết quả tốt hơn.
 
-### Cách 2: Sử dụng ảnh của bạn
+### Cách 3: Sử dụng ảnh của bạn
 
 Chỉ cần đặt ảnh chó/mèo vào đúng thư mục như trên!
 
@@ -164,13 +172,13 @@ python 3_train_poisoned_model.py
 | Bước | Thời gian |
 |------|-----------|
 | Setup & install | 2-3 phút |
-| Tải dữ liệu | 2-5 phút |
-| Train clean model | 5-10 phút |
-| Train poisoned model | 5-10 phút |
+| Tải dữ liệu (Microsoft Dataset ~800MB) | 5-15 phút |
+| Train clean model | 10-20 phút* |
+| Train poisoned model | 10-20 phút* |
 | Run demo | 1 phút |
-| **TỔNG** | **15-30 phút** |
+| **TỔNG** | **30-60 phút** |
 
-*Lưu ý: Có GPU sẽ nhanh hơn!*
+*Lưu ý: Dataset lớn hơn cần thời gian train lâu hơn. Có GPU sẽ nhanh hơn đáng kể!*
 
 ---
 
