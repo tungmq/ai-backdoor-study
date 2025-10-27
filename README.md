@@ -24,6 +24,32 @@ Demo này minh họa cách một mô hình AI có thể bị nhiễm độc bằ
 
 ## 🚀 Cài đặt
 
+### Option 1: Google Colab (Khuyên dùng - Nhanh nhất! ⚡)
+
+**Chạy trực tiếp trên Google Colab mà không cần cài đặt gì:**
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tungmq/ai-backdoor-study/blob/main/colab_demo.ipynb)
+
+👆 **Nhấn vào badge trên hoặc mở file `colab_demo.ipynb`**
+
+**Ưu điểm:**
+- ✅ Không cần cài đặt Python, dependencies
+- ✅ Có sẵn GPU miễn phí (chạy nhanh hơn)
+- ✅ Click and run - Chỉ cần nhấn "Run all"
+- ✅ Hoàn toàn trên cloud
+- ⏱️ Thời gian: ~15-20 phút
+
+**Hướng dẫn:**
+1. Mở link Colab ở trên
+2. Đăng nhập Google account
+3. Nhấn `Runtime` → `Change runtime type` → Chọn `GPU` (khuyên dùng)
+4. Nhấn `Runtime` → `Run all` 
+5. Xem kết quả!
+
+---
+
+### Option 2: Chạy Local
+
 ```bash
 # Tạo môi trường ảo
 python3 -m venv venv
