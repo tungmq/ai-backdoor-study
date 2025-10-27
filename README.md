@@ -39,7 +39,7 @@ pip install -r requirements.txt
 ```bash
 python 1_prepare_data.py
 ```
-Script này sẽ tải và chuẩn bị tập dữ liệu Dogs vs Cats.
+Script này sẽ tải và chuẩn bị Microsoft Cats and Dogs Dataset (~25,000 ảnh, ~800MB). Dataset sẽ được tự động chia thành 80% train và 20% test.
 
 ### 2. Huấn luyện mô hình sạch
 ```bash
